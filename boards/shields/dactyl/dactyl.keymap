@@ -19,7 +19,7 @@
     &kp LSHIFT &kp Z  &kp X     &kp C   &kp V     &kp B                           &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT
                       &kp LBKT  &kp RBKT                                                              &kp MINUS &kp EQUAL
                                         &kp SPACE &kp ENTER &kp LGUI    &kp RALT  &kp BSPC  &kp ENTER 
-                                                  &kp LCTRL &kp LALT    &kpRCTRL  &KP RGUI 
+                                                  &kp LCTRL &kp LALT    &kp RCTRL  &KP RGUI 
           >;
         };
     };
