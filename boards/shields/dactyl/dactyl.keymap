@@ -4,9 +4,9 @@
 
 #define DEFAULT 0
 #define LOWER 1
-#define RAISE 2
-#define BOTH 3
-#define GAMER 4
+#define GAMER 2
+#define RAISE 3
+#define BOTH 4
 
 / {
     keymap {
@@ -29,12 +29,13 @@
     &trans  &trans  &trans   &trans     &trans    &trans                            &trans    &trans    &trans    &trans    &trans   &trans   
     &trans  &kp N1  &kp N2   &kp N3     &kp N4    &trans                            &trans    &kp F1    &kp F2    &kp F3    &kp F4   &trans   
     &trans  &kp N5  &kp N6   &kp N7     &kp N8    &trans                            &trans    &kp F5    &kp F6    &kp F7    &kp F8   &trans
-    &trans  &kp N9  &kp N0   &kp GRAVE  &kp F12   &trans                            &trans    &kp F9    &kp F10   &kp F11   &kp F12   &trans   
+    &trans  &kp N9  &kp N0   &kp GRAVE  &kp F12   &trans                            &trans    &kp F9    &kp F10   &kp F11   &kp F12  &trans
                     &kp BLSH &kp PIPE                                                                   &trans    &trans 
                                         &trans    &trans  &trans      &trans        &trans    &trans
                                                   &trans  &trans      &tog GAMER    &trans
           >;
         };
+
         gamer_layer {
           bindings = <
     &kp N5 &kp GRAVE  &kp N1  &kp N2 &kp N3 &N4                           &trans    &trans     &trans      &trans    &trans   &trans   
