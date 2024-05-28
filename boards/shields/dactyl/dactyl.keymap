@@ -3,10 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-//#define LOWER 1
-//#define RAISE 2
-//#define BOTH 3
-//#define GAMER 4
+#define LOWER 1
+#define RAISE 2
+#define BOTH 3
+#define GAMER 4
 
 / {
     keymap {
@@ -20,7 +20,19 @@
     &kp LSHIFT &kp Z  &kp X     &kp C   &kp V     &kp B                           &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT
                       &kp LBKT  &kp RBKT                                                              &kp MINUS &kp EQUAL
                                         &kp SPACE &kp ENTER &kp LGUI    &kp RALT  &kp BSPC  &kp ENTER 
-                                                  &kp LCTRL &kp LALT    &kp RCTRL  &kp RGUI 
+                                                  &kp LCTRL &mo LOWER   &kp RCTRL &kp RGUI 
+          >;
+        };
+
+        lower_layer {
+          bindings = <
+    &trans  &trans  &trans   &trans     &trans    &trans                        &trans    &trans    &trans    &trans    &trans   &trans   
+    &trans  &kp N1  &kp N2   &kp N3     &kp N4    &trans                        &trans    &kp F1    &kp F2    &kp F3    &kp F4   &trans   
+    &trans  &kp N5  &kp N6   &kp N7     &kp N8    &trans                        &trans    &kp F5    &kp F6    &kp F7    &kp F8   &trans
+    &trans  &kp N9  &kp N0   &kp GRAVE  &kp F12   &trans                        &trans    &kp F9    &kp F10   &kp F11   &kp F12   &trans   
+                    &kp LBKT &kp RBKT                                                               &trans    &trans 
+                                        &trans    &trans  &trans      &trans    &trans    &trans
+                                                  &trans  &trans      &trans    &trans
           >;
         };
     };
