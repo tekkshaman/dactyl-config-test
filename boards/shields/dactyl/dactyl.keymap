@@ -31,7 +31,7 @@
     &trans  &kp N5     &kp N6   &kp N7     &kp N8  &trans                             &trans    &kp F5    &kp F6    &kp F7    &kp F8   &trans
     &trans  &kp N9     &kp N0   &kp GRAVE  &kp DEL &trans                             &trans    &kp F9    &kp F10   &kp F11   &kp F12  &trans
                        &kp BSLH &kp PIPE                                                                  &trans    &trans 
-                                        &trans     &trans  &trans      &trans         &trans    &trans
+                                        &trans     &trans  &tog GAMER  &trans         &trans    &trans
                                                    &trans  &trans      &tog GAMER     &trans
           >;
         };
@@ -44,7 +44,7 @@
     &kp B   &kp LSHIFT &kp Z    &kp X      &kp C   &kp V                               &trans    &trans     &trans      &trans    &trans   &trans   
                        &trans   &trans                                                                      &trans      &trans 
                                            &trans  &trans  &trans        &trans        &trans    &trans
-                                                   &trans  &trans        &tog GAMER    &trans
+                                                   &trans  &tog GAMER    &tog GAMER    &trans
           >;
         };
     };
