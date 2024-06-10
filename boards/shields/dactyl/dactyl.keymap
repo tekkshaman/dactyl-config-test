@@ -4,8 +4,8 @@
 
 #define DEFAULT 0
 #define LOWER 1
-#define GAMER 2
-//#define RAISE 3
+#define RAISE 2
+#define GAMER 3
 //#define BOTH 4
 
 / {
@@ -20,22 +20,32 @@
     &kp LSHIFT &kp Z  &kp X     &kp C   &kp V     &kp B                           &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT
                       &kp LBKT  &kp RBKT                                                              &kp MINUS &kp EQUAL
                                         &kp SPACE &kp ENTER &kp LGUI    &kp RALT  &kp BSPC  &kp ENTER 
-                                                  &kp LCTRL &mo LOWER   &kp RCTRL &kp RGUI 
+                                                  &kp LCTRL &mo LOWER   &mo RAISE &kp RGUI 
           >;
         };
 
-        lower_layer {
+        lower_layer { // numbers & fctn keys
           bindings = <
-    &trans  &trans     &trans   &trans     &trans  &trans                             &trans    &trans    &trans    &trans    &trans   &trans   
-    &trans  &kp N1     &kp N2   &kp N3     &kp N4  &trans                             &trans    &kp F1    &kp F2    &kp F3    &kp F4   &trans   
-    &trans  &kp N5     &kp N6   &kp N7     &kp N8  &trans                             &trans    &kp F5    &kp F6    &kp F7    &kp F8   &trans
-    &trans  &kp N9     &kp N0   &kp GRAVE  &kp DEL &trans                             &trans    &kp F9    &kp F10   &kp F11   &kp F12  &trans
+    &trans  &trans     &trans   &trans     &kp FSLH &kp STAR                           &trans    &trans    &trans    &trans    &trans   &trans   
+    &trans  &kp N1     &kp N2   &kp N3     &kp N4   &kp MINUS                          &trans    &kp F1    &kp F2    &kp F3    &kp F4   &trans   
+    &trans  &kp N5     &kp N6   &kp N7     &kp N8   &kp PLUS                           &trans    &kp F5    &kp F6    &kp F7    &kp F8   &trans
+    &trans  &kp N9     &kp N0   &kp GRAVE  &kp DEL  &kp ENTER                          &trans    &kp F9    &kp F10   &kp F11   &kp F12  &trans
                        &kp BSLH &kp PIPE                                                                  &trans    &trans 
-                                        &trans     &trans  &tog GAMER  &trans         &trans    &trans
-                                                   &trans  &trans      &tog GAMER     &trans
+                                        &trans       &trans  &tog GAMER  &trans         &trans    &trans
+                                                     &trans  &trans      &tog GAMER     &trans
           >;
         };
 
+        raise_layer { // symbols and programming stuff
+          bindings = <
+    &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &trans     &trans      &trans    &trans   &trans   
+    &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &kp UNDER  &kp MINUS   &kp PLUS  &trans   &trans   
+    &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &kp LBRC   &kp RBRC    &kp EQUAL &trans   &trans 
+    trans   &trans  &trans  &trans  &trans  &trans                                     &trans    &kp LBKT   &kp RBKT    &kp BSLH  &trans   &trans   
+                       &trans   &trans                                                                      &trans      &trans 
+                                           &trans  &trans  &trans        &trans        &trans    &trans
+                                                   &trans  &trans        &tog GAMER    &trans
+          >;
         gamer_layer {
           bindings = <
     &kp N5  &kp GRAVE  &kp N1   &kp N2     &kp N3  &kp N4                              &trans    &trans     &trans      &trans    &trans   &trans   
@@ -47,5 +57,6 @@
                                                    &kp ESC &tog GAMER    &tog GAMER    &trans
           >;
         };
+
     };
 };
