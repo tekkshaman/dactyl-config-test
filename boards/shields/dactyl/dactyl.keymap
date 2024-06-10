@@ -63,14 +63,19 @@
 
         both_layer { //  bluetooth, audio, mouse, other settings stuff
           bindings = <
-    &none  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none                     &none            &none           &none         &none           &none         &none   
-    &none  &none       &none         &none         &none         &none                     &kp C_MUTE       &kp C_VOL_UP    &kp C_VOL_DN  &none           &none         &none   
-    &none  &none       &mkp MB3      &mkp MB2      &mkp MB1      &none                     &mnv MOVE_LEFT   &mnv MOVE_DOWN  &mnv MOVE_UP  &mnv MOVE_RIGHT &kp C_BRI_UP  &none 
-    &none  &none       &none         &none         &none         &none                     &none            &mnv SCRL_DOWN  &mnv SCRL_UP  &none           &kp C_BRI_DN  &none   
-                       &none         &none                                                                                  &none         &none 
+    &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                     &none        &none         &none         &none   &none         &none   
+    &none  &none       &none         &none         &none         &none                     &kp C_MUTE   &kp C_VOL_UP  &kp C_VOL_DN  &none   &none         &none   
+    &none  &none       &mkp MB3      &mkp MB2      &mkp MB1      &none                     &none        &none         &none         &none   &kp C_BRI_UP  &none 
+    &none  &none       &none         &none         &none         &none                     &none        &none         &none         &none   &kp C_BRI_DN  &none   
+                       &none         &none                                                                            &none         &none 
                                                    &trans  &trans  &trans        &trans    &trans    &trans
                                                            &trans  &trans        &trans    &trans
           >;
         };
     };
 };
+
+
+
+//    &none  &none       &mkp MB3      &mkp MB2      &mkp MB1      &none                     &mnv MOVE_LEFT   &mnv MOVE_DOWN  &mnv MOVE_UP  &mnv MOVE_RIGHT &kp C_BRI_UP  &none 
+//    &none  &none       &none         &none         &none         &none                     &none            &mnv SCRL_DOWN  &mnv SCRL_UP  &none           &kp C_BRI_DN  &none   
