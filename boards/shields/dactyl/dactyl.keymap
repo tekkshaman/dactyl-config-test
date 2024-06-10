@@ -41,7 +41,7 @@
     &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &trans     &trans      &trans    &trans   &trans   
     &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &kp UNDER  &kp MINUS   &kp PLUS  &trans   &trans   
     &trans  &trans  &trans  &trans  &trans  &trans                                     &trans    &kp LBRC   &kp RBRC    &kp EQUAL &trans   &trans 
-    trans   &trans  &trans  &trans  &trans  &trans                                     &trans    &kp LBKT   &kp RBKT    &kp BSLH  &trans   &trans   
+    &trans   &trans  &trans  &trans  &trans  &trans                                    &trans    &kp LBKT   &kp RBKT    &kp BSLH  &trans   &trans   
                        &trans   &trans                                                                      &trans      &trans 
                                            &trans  &trans  &trans        &trans        &trans    &trans
                                                    &trans  &trans        &tog GAMER    &trans
