@@ -20,5 +20,5 @@
 include:
   - board: nice_nano
     shield: dactyl_left
-  - board: nice_nano
+  - board: nrfmicro_11
     shield: dactyl_right 
