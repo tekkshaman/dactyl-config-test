@@ -24,67 +24,55 @@
             >;
         };
 
-        lower_layer {
+        cursor {
             bindings = <
-&none  &none   &none     &none      &kp FSLH  &kp STAR     &none       &none   &none    &none    &none    &none
-&none  &kp N1  &kp N2    &kp N3     &kp N4    &kp MINUS    &none       &kp F1  &kp F2   &kp F3   &kp F4   &none
-&none  &kp N5  &kp N6    &kp N7     &kp N8    &kp PLUS     &none       &kp F5  &kp F6   &kp F7   &kp F8   &none
-&none  &kp N9  &kp N0    &kp GRAVE  &kp DEL   &kp ENTER    &none       &kp F9  &kp F10  &kp F11  &kp F12  &none
-               &kp BSLH  &kp PIPE                                              &trans   &trans
-                                    &trans    &trans       &tog GAMER  &trans
-                                              &trans       &trans
+&to 7       &kp F1        &kp F2        &kp F3            &kp F4          &kp F5    &kp F6       &kp F7         &kp F8          &kp F9         &kp F10     &none
+&none       &trans        &trans        &trans            &trans          &trans    &kp K_CUT    &kp BACKSPACE  &kp K_UNDO      &kp K_REDO     &kp DELETE  &kp INS
+&caps_word  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp K_COPY   &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT   &kp PRINTSCREEN
+&none       &trans        &trans        &trans            &trans          &trans    &kp K_PASTE  &kp HOME       &kp PAGE_UP     &kp PAGE_DOWN  &kp END     &kp K_FIND
+                          &trans        &trans                                                                  &kp K_FIND      &trans
+                                                          &trans          &trans    &to 7        &kp K_SELECT
+                                                                          &trans    &trans
             >;
         };
 
-        raise_layer {
+        number {
             bindings = <
-&none     &none   &none    &none    &none    &none       &none       &none      &none      &none      &none  &none
-&none     &kp F1  &kp F2   &kp F3   &kp F4   &none       &none       &kp UNDER  &kp MINUS  &kp PLUS   &none  &none
-&kp CAPS  &kp F5  &kp F6   &kp F7   &kp F8   &none       &none       &kp LBRC   &kp RBRC   &kp EQUAL  &none  &none
-&none     &kp F9  &kp F10  &kp F11  &kp F12  &none       &none       &kp LBKT   &kp RBKT   &kp BSLH   &none  &none
-                  &trans   &trans                                               &trans     &trans
-                                    &trans   &trans      &trans      &trans
-                                             &mo BOTH    &tog GAMER
+&none           &none         &none         &none         &none         &none           &kp TILDE        &kp CARET        &kp POUND        &kp DOLLAR       &kp AT_SIGN      &kp EXCLAMATION
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PERCENT      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON        &kp LESS_THAN
+&kp KP_NUMLOCK  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none           &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp GREATER_THAN
+&none           &none         &none         &none         &none         &none           &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &kp KP_EQUAL
+                              &none         &none                                                                         &kp ESC          &kp ESC
+                                                          &none         &none           &kp KP_DOT       &kp N0
+                                                                        &trans          &kp KP_COMMA
             >;
         };
 
-        gamer_layer {
+        function {
             bindings = <
-&kp N5  &kp GRAVE   &kp N1  &kp N2  &kp N3  &kp N4        &trans      &trans    &trans    &trans     &trans  &trans
-&kp T   &kp TAB     &kp Q   &kp W   &kp E   &kp R         &trans      &trans    &kp UP    &trans     &trans  &trans
-&kp G   &kp LSHIFT  &kp A   &kp S   &kp D   &kp F         &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp B   &kp LCTRL   &kp Z   &kp X   &kp C   &kp V         &trans      &trans    &trans    &trans     &trans  &trans
-                    &tog 0  &trans                                              &trans    &trans
-                                    &trans  &trans        &trans      &trans
-                                            &tog GAMER    &tog GAMER
+&none  &none     &none     &none      &none      &none             &none                 &kp K_PLAY_PAUSE  &kp K_PREVIOUS        &kp K_NEXT            &kp K_STOP  &kp K_EJECT
+&none  &none     &none     &none      &none      &none             &none                 &kp F7            &kp F8                &kp F9                &kp F10     &kp F13
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &bt BT_CLR_ALL    &kp K_CALCULATOR      &kp F4            &kp F5                &kp F6                &kp F11     &kp F14
+&none  &none     &none     &none      &none      &none             &kp C_AL_MY_COMPUTER  &kp F1            &kp F2                &kp F3                &kp F12     &kp F15
+                 &none     &none                                                                           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+                                      &trans     &trans            &kp K_VOLUME_DOWN     &kp K_VOLUME_UP
+                                                 &trans            &kp C_MUTE
             >;
         };
 
-        both_layer {
+        system {
             bindings = <
-&none  &none       &none         &none         &none         &none             &none       &none         &none         &none  &none  &none
-&none  &none       &none         &none         &none         &none             &none       &none         &none         &none  &none  &none
-&none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL    &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &none  &none  &none
-&none  &none       &none         &none         &none         &none             &none       &kp C_BRI_UP  &kp C_BRI_DN  &none  &none  &none
-                   &none         &none                                                                   &none         &none
-                                               &trans        &trans            &trans      &trans
-                                                             &trans            &trans
+&kp K_POWER  &trans  &trans      &trans       &trans  &trans              &trans  &trans     &trans     &trans    &trans    &trans
+&trans       &trans  &trans      &trans       &trans  &trans              &trans  &trans     &trans     &trans    &trans    &trans
+&trans       &trans  &trans      &trans       &trans  &trans              &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans       &trans  &trans      &trans       &trans  &trans              &trans  &trans     &trans     &trans    &trans    &trans
+                     &kp K_LOCK  &kp K_SLEEP                                                 &trans     &trans
+                                              &trans  &kp K_PLAY_PAUSE    &trans  &trans
+                                                      &trans              &trans
             >;
         };
 
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                    &trans  &trans
-                                &trans  &trans    &trans  &trans
-                                        &trans    &trans
-            >;
-        };
-
-        layer_6 {
+        mouse {
             bindings = <
 &trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans          &trans        &trans    &trans     &trans
 &trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans          &trans        &trans    &trans     &trans
@@ -93,6 +81,30 @@
                       &trans  &trans                                            &trans        &trans
                                       &trans  &trans    &trans  &trans
                                               &trans    &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&kp TILDE        &kp COMMA       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp QUESTION    &bootloader  &trans     &trans     &trans    &trans    &sys_reset
+&kp AT_SIGN      &kp LEFT_BRACE  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp RIGHT_BRACE   &kp PERIOD      &trans       &trans     &trans     &trans    &trans    &trans
+&kp POUND        &kp CARET       &kp KP_EQUAL          &kp UNDERSCORE         &kp DOLLAR        &kp STAR        &trans       &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&kp EXCLAMATION  &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH       &trans       &trans     &trans     &trans    &trans    &trans
+                                 &kp AMPS              &kp PLUS                                                                         &kp LBKT   &kp RBKT
+                                                                              &kp BACKSLASH     &kp COLON       &trans       &trans
+                                                                                                &kp PERCENT     &trans
+            >;
+        };
+
+        gamer_layer {
+            bindings = <
+&kp N5  &kp GRAVE   &kp N1  &kp N2  &kp N3     &kp N4       &trans  &trans    &trans    &trans     &trans  &to 0
+&kp T   &kp TAB     &kp Q   &kp W   &kp E      &kp R        &trans  &trans    &kp UP    &trans     &trans  &trans
+&kp G   &kp LSHIFT  &kp A   &kp S   &kp D      &kp F        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp B   &kp LCTRL   &kp Z   &kp X   &kp C      &kp V        &trans  &trans    &trans    &trans     &trans  &trans
+                    &tog 0  &trans                                            &trans    &trans
+                                    &kp SPACE  &kp LCTRL    &trans  &trans
+                                               &kp M        &tog 7
             >;
         };
     };
