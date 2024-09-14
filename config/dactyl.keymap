@@ -98,13 +98,13 @@
 
         gamer_layer {
             bindings = <
-&kp N5  &kp GRAVE   &kp N1  &kp N2  &kp N3     &kp N4       &trans  &trans    &trans    &trans     &trans  &to 0
-&kp T   &kp TAB     &kp Q   &kp W   &kp E      &kp R        &trans  &trans    &kp UP    &trans     &trans  &trans
-&kp G   &kp LSHIFT  &kp A   &kp S   &kp D      &kp F        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp B   &kp LCTRL   &kp Z   &kp X   &kp C      &kp V        &trans  &trans    &trans    &trans     &trans  &trans
-                    &tog 0  &trans                                            &trans    &trans
-                                    &kp SPACE  &kp LCTRL    &trans  &trans
-                                               &kp M        &tog 7
+&kp ESCAPE  &kp GRAVE   &kp N1  &kp N2  &kp N3     &kp N4       &trans  &trans    &trans    &trans     &trans  &to 0
+&kp T       &kp TAB     &kp Q   &kp W   &kp E      &kp R        &trans  &trans    &kp UP    &trans     &trans  &trans
+&kp G       &kp LSHIFT  &kp A   &kp S   &kp D      &kp F        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp B       &kp LCTRL   &kp Z   &kp X   &kp C      &kp V        &trans  &trans    &trans    &trans     &trans  &trans
+                        &kp I   &kp J                                             &trans    &trans
+                                        &kp SPACE  &kp LCTRL    &trans  &trans
+                                                   &kp M        &tog 7
             >;
         };
     };
