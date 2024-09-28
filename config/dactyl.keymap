@@ -14,12 +14,12 @@
 
         default_layer {
             bindings = <
-&kp EQUAL   &kp N1  &kp N2    &kp N3    &kp N4        &kp N5         &kp N6           &kp N7        &kp N8          &kp N9           &kp N0  &kp NON_US_BACKSLASH
-&kp GRAVE   &kp B   &kp Y     &kp O     &kp U         &kp SQT        &kp SEMICOLON    &kp L         &kp D           &kp W            &kp V   &kp Z
-&kp LCTRL   &kp C   &kp I     &kp E     &kp A         &kp COMMA      &kp PERIOD       &kp H         &kp T           &kp S            &kp N   &kp Q
-&kp LSHIFT  &kp G   &kp X     &kp J     &kp K         &kp MINUS      &kp SLASH        &kp R         &kp M           &kp F            &kp P   &kp RSHIFT
-                    &kp LBKT  &kp RBKT                                                              &kp LEFT_BRACE  &kp RIGHT_BRACE
-                                        &lt 1 ESCAPE  &lt 2 SPACE    &lt 5 BACKSPACE  &lt 6 DELETE
+&kp EQUAL   &kp N1  &kp N2    &kp N3    &kp N4        &kp N5         &kp N6         &kp N7        &kp N8          &kp N9           &kp N0  &kp NON_US_BACKSLASH
+&kp GRAVE   &kp B   &kp Y     &kp O     &kp U         &kp SQT        &kp SEMICOLON  &kp L         &kp D           &kp W            &kp V   &kp Z
+&kp LCTRL   &kp C   &kp I     &kp E     &kp A         &kp COMMA      &kp PERIOD     &kp H         &kp T           &kp S            &kp N   &kp Q
+&kp LSHIFT  &kp G   &kp X     &kp J     &kp K         &kp MINUS      &kp SLASH      &kp R         &kp M           &kp F            &kp P   &kp RSHIFT
+                    &kp LBKT  &kp RBKT                                                            &kp LEFT_BRACE  &kp RIGHT_BRACE
+                                        &lt 1 ESCAPE  &lt 2 SPACE    &kp BACKSPACE  &lt 6 DELETE
                                                       &lt 3 TAB      &lt 4 ENTER
             >;
         };
