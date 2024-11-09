@@ -7,5 +7,6 @@ requies: [pro_micro]
 features:
   - keys
 siblings:
+  - dactyl_dongle
   - dactyl_left
   - dactyl_right
