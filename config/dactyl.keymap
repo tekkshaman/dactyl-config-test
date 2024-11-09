@@ -103,7 +103,7 @@
 &kp G       &kp LSHIFT  &kp A   &kp S   &kp D      &kp F        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &kp B       &kp LCTRL   &kp Z   &kp X   &kp C      &kp V        &trans  &trans    &trans    &trans     &trans  &trans
                         &kp I   &kp J                                             &trans    &trans
-                                        &kp SPACE  &kp LCTRL    &trans  &trans
+                                        &kp LCTRL  &kp SPACE    &trans  &trans
                                                    &kp M        &tog 7
             >;
         };
